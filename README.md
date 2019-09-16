@@ -1,69 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SKINN App
+------
+**Final Project for [Flatiron School](https://flatironschool.com/) Module 4 (React.js)**
 
-## Available Scripts
+![Main Component](public/app-screenshot.png "Main Container Component Rendering")
 
-In the project directory, you can run:
+## PROJECT DESCRIPTION
 
-### `npm start`
+### Goal
+Building an application where women can share their 10 Step Skincare routine. With so many products out there, it can get overwhelming to choose what is right for you. SKINN (Skin-Natural) makes it easier for women to share the products they are using for each step, their reviews and thoughts on the items, and to explore other natural, organic products based on their skin type. It’s a platform for women to give a peak inside their shelf tops.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Instructions 
+1. On backend, (skinn-app-api) bundle install before running rails server (rails s) on the terminal.
+2. On frontend, (skinn-app-frontend) npm install before runnning npm start on the terminal. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Functions 
+SKINN is built using React.js for the frontend, and Rails as our backend API server. The frontend uses a simple Bcrypt authentication. Client-side routes implemented using react-router. 
+Main Components:
+* **Main Container**: shows the 10-step skincare products pertaining to the current user. By clicking on the item (StepCard component), the user can view more details on the product, as well as choose to browse more products within the relative category. 
+* **Browse Container**: lists products per category. By clicking on the item (StepCard component, reused from Main Container), the user can "PICK" the item to swap out with their current product. 
+* **Product Page**: shows individual product brand, description, and review form. Once review is submitted, our Review Card component renders the review beneath the product details. 
+* **Quiz Page**: the user answers the question on the quiz page component, and the application will customize the 10-step product selection based on the answer provided. The user may retake the quiz as many times as needed. 
 
-### `npm test`
+## PROJECT REQUIREMENTS
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Use a Rails API backend with a separate React frontend.
+2. Have at least three resources on the backend and your application must have full CRUD actions for at least one resource.
+3. Must have at least two different client-side routes (i.e. use react-router). Ex: even if your whole app is mostly a single page app, have the form to signup be found at /signup
+4. Optional: Your application can have authentication/authorization. You are welcome to use an auth template as discussed in class.
 
-### `npm run build`
+**Time allocated: 5 days**
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MODEL FLOW CHART
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![Model Flow Chart](public/model-flow.png "Model Flow Chart for our Backend")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# SKINN-frontend
+### Collaborator:
+[@cbatsoula](https://github.com/cbatsoula)
