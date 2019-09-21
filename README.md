@@ -10,8 +10,8 @@
 Building an application where women can share their 10 Step Skincare routine. With so many products out there, it can get overwhelming to choose what is right for you. SKINN (Skin-Natural) makes it easier for women to share the products they are using for each step, their reviews and thoughts on the items, and to explore other natural, organic products based on their skin type. It’s a platform for women to give a peak inside their shelf tops.
 
 ### Instructions 
-1. On backend, (skinn-app-api) bundle install before running rails server (rails s) on the terminal.
-2. On frontend, (skinn-app-frontend) npm install before runnning npm start on the terminal. 
+1. On backend, (https://github.com/ekatsuta/SKINN-api) `bundle install` before running rails server, and run `rails s` on the terminal.
+2. On frontend, (skinn-app-frontend) `npm install` before runnning `npm start` on the terminal. 
 
 ### Functions 
 SKINN is built using React.js for the frontend, and Rails as our backend API server. The frontend uses a simple Bcrypt authentication. Client-side routes implemented using react-router. 
